@@ -69,6 +69,47 @@ namespace DnyVTydnu
 
             }
         }
+        public static void HodnotVsReference()
+        {
+            int hodnota1 = 6;
+
+
+            int hodnota2 = hodnota1;
+//zvysime hodnotu o 1
+            hodnota2++;
+
+            Console.WriteLine(hodnota1);
+            Console.WriteLine(hodnota2);
+
+            Auto auto1 = new Auto();
+            auto1.Barva = "cervena";
+
+            Auto auto2 = auto1;
+            auto2.Barva = "cerna";
+//tuto bunku nezamenil, lebo to nie je hodnotova premenna
+
+            Console.WriteLine(auto1.Barva);
+            Console.WriteLine(auto2.Barva);
+
+        }
+        public static void PrebarviAuto(Auto auto)
+        {
+            auto.Barva = "bila";
+
+        }
+        public static void ZvysOJednicku(ref int a)
+        {
+            a++;
+
+        }
+
+// vrati aj navratovu hodnotu funkcia
+        public static bool Otoc(bool vstup, out int b)
+        {
+            b = 10;
+            return !vstup;
+        }
+
 
     }
     
