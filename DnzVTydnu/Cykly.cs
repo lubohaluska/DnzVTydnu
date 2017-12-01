@@ -26,7 +26,7 @@ namespace DnyVTydnu
             do
             {
                 i++;
-                Console.WriteLine("Cyklus cislo {0}",i);
+                Console.WriteLine("Cyklus cislo {0}", i);
             }
             while (i < 4);
         }
@@ -38,8 +38,8 @@ namespace DnyVTydnu
             // aj takto sa to da
             //            for (int i = 0; i < 6; i+=2)  najbeznejsie
 
-// cyklus dvomi premennymi
-            for (int i = 0, j = 10; i <= j ; i++, j--)
+            // cyklus dvomi premennymi
+            for (int i = 0, j = 10; i <= j; i++, j--)
             {
                 //                Console.Write("Som v cykle na cisle: ");
                 Console.Write("Som v cykle na cisle i{0}, j{1}:", i, j);
@@ -53,23 +53,25 @@ namespace DnyVTydnu
             {
                 Console.WriteLine("Som v cykle na cisle {0}", i);
             }
-                
-               Console.WriteLine("Pocet opakovani bol {0}", opakovanie);
-            }
 
+            Console.WriteLine("Pocet opakovani bol {0}", opakovanie);
         }
-    public static void CyklusForContinue()
-    {
-        for (int i = 0; i <= 10; i++)
+        public static void CyklusForContinue()
         {
-            int zbytek = i % 2;
-            if (zbytek !=0)
+            for (int i = 0; i <= 10; i++)
             {
-                continue;
-            }
-        Console.WriteLine(i);
+                int zbytek = i % 2;
+                if (zbytek != 0)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
 
+            }
         }
+
     }
+    
+
 
 }

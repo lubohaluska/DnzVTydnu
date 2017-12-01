@@ -14,7 +14,8 @@ namespace DnyVTydnu
 //            Cykly.CyklusWhile();
 //            Cykly.DoWhile();
             Cykly.CyklusFor();
-            Cykly.CyklusFor2();
+            Cykly.CyklusFor2(10);
+            Cykly.CyklusForContinue();
             Console.ReadLine();
         }
     }
