@@ -73,7 +73,7 @@ namespace DnzVTydnu
 
     public static bool ZkontrolujVstup(int cisloDne)
     {
-
+        int netusim
     }
 
     }
