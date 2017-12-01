@@ -56,17 +56,17 @@ namespace DnzVTydnu
         public static void VypisDenTydne(string cisloDne, bool nedeleJePrvni)
         {
             int denTydne = int.Parse(cisloDne);
-            if(denTydne > 0 && denTydne < 8)
-        { 
-                 if (nedeleJePrvni)
+
+            if(ZkontrolujVstup (denTydne))
+
+                if (nedeleJePrvni)
                  {
                         DenTydne--;
                  }
-                 VypisDenTydne(denTydne.ToString());
-        }
+                 VypisDenTydne(denTydne.ToString()); 
             else
             {
-                Console.WriteLine
+                Console.WriteLine ("Spatny vstup");
             }
         }
     }
@@ -80,9 +80,11 @@ namespace DnzVTydnu
         }
         else
         {
-            Console.WriteLine("nespravny vstup");
+            Console.WriteLine("nespravny vstup, napis od 1 do 7");
             return false;
         }
+
+        // najkratsi zapis return(cisloDne >=1 && cisloDne <= 7);
 
     }
 }
