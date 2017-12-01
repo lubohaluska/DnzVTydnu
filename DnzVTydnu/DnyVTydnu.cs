@@ -73,8 +73,16 @@ namespace DnzVTydnu
 
     public static bool ZkontrolujVstup(int cisloDne)
     {
-        int netusim
-    }
+        if (cisloDne >=1 && cisloDne <= 7)
+        {
+            Console.WriteLine("spravny vstup");
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("nespravny vstup");
+            return false;
+        }
 
     }
 }
