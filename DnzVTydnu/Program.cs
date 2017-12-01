@@ -11,8 +11,10 @@ namespace DnyVTydnu
     {
         static void Main(string[] args)
         {
-            Cykly.CyklusWhile();
-            Cykly.DoWhile();
+//            Cykly.CyklusWhile();
+//            Cykly.DoWhile();
+            Cykly.CyklusFor();
+            Cykly.CyklusFor2();
             Console.ReadLine();
         }
     }
