@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DnzVTydnu
+namespace DnyVTydnu
 {
     class DnyVTydnu
     {
@@ -58,12 +58,13 @@ namespace DnzVTydnu
             int denTydne = int.Parse(cisloDne);
 
             if(ZkontrolujVstup (denTydne))
-
+            { 
                 if (nedeleJePrvni)
                  {
                         DenTydne--;
                  }
-                 VypisDenTydne(denTydne.ToString()); 
+                 VypisDenTydne(denTydne.ToString());
+            }
             else
             {
                 Console.WriteLine ("Spatny vstup");
