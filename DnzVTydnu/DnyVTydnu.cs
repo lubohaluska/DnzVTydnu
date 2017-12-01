@@ -85,7 +85,6 @@ namespace DnyVTydnu
             return false;
         }
 
-
         // najkratsi zapis return(cisloDne >=1 && cisloDne <= 7);
 
     }
