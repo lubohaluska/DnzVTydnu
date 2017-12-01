@@ -10,6 +10,7 @@ namespace DnyVTydnu
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
